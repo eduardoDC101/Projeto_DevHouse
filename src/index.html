@@ -19,9 +19,9 @@
   <body class="bg-slate-200">
     <div class="flex w-full">
       <aside
-        class="hidden sm:flex w-full max-w-[200px] min-h-screen bg-white flex-col py-5 px-2 relative"
+        class="hidden sm:flex w-full max-w-[200px] min-h-screen bg-white flex-col py-5 px-2 relative border-r-2 border-black/20"
       >
-        <div>
+        <div class="fixed">
           <div class="pl-2">
             <h1 class="text-rose-500 text-3xl font-bold">DevHouse</h1>
           </div>
@@ -95,10 +95,10 @@
         </div>
 
         <header
-          class="bg-white w-full py-5 px-3 flex flex-row items-center justify-between"
+          class="bg-white w-full py-5 px-3 flex flex-row items-center justify-between gap-2"
         >
           <div
-            class="flex items-center bg-slate-100 px-3 py-2 w-full max-w-[65%] rounded-lg lg:mr-8"
+            class="flex items-center bg-slate-100 px-3 py-2 w-full max-w-[60%] rounded-lg lg:mr-8"
           >
             <i class="fa fa-search text-gray-500" style="font-size: 16px"></i>
             <input
@@ -132,6 +132,257 @@
             </button>
           </div>
         </header>
+
+        <section class="w-full px-3 lg:px-6">
+          <div class="flex w-full items-baseline justify-between">
+            <h1 class="font-bold text-3xl mt-4 mb-6">Compre ou alugue</h1>
+            <span class="hidden md:block text-gray-600"
+              >100 casas encontradas</span
+            >
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <a
+              href="#"
+              class="bg-white p-3 rounded-lg min-h-[400px] relative flex flex-col hover:shadow-xl duration-300"
+            >
+              <div>
+                <div class="group overflow-hidden rounded-lg">
+                  <div class="absolute z-40 top-5 left-4">
+                    <div
+                      class="flex bg-slate-50/70 self-start items-center justify-center gap-3 px-3 py-1 rounded-full group-hover:bg-white duration-300"
+                    >
+                      <i class="fa fa-map" style="font-size: 12px"></i>
+                      <p class="font-medium text-sm">Campo Grande - MS</p>
+                    </div>
+                  </div>
+
+                  <img
+                    src="./assets/1.jpg"
+                    alt="casa 1"
+                    class="rounded-lg w-full h-64 object-cover group-hover:scale-110 duration-300"
+                  />
+                </div>
+
+                <div class="w-full flex flex-col gap-1 my-2">
+                  <h2 class="text-lg font-bold">Apartamento grande</h2>
+                  <div>
+                    <p class="text-gray-600 line-through text-sm">
+                      R$ 3.000/mês
+                    </p>
+                    <p class="my-1 font-bold text-indigo-500">R$ 2.200/mês</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-auto">
+                <span class="font-medium text-sm">100m -</span>
+                <span class="font-medium text-sm">2 quartos - </span>
+                <span class="font-medium text-sm">2 banheiros</span>
+              </div>
+            </a>
+
+            <a
+              href="#"
+              class="bg-white p-3 rounded-lg min-h-[400px] relative flex flex-col hover:shadow-xl duration-300"
+            >
+              <div>
+                <div class="group overflow-hidden rounded-lg">
+                  <div class="absolute z-40 top-5 left-4">
+                    <div
+                      class="flex bg-slate-50/70 self-start items-center justify-center gap-3 px-3 py-1 rounded-full group-hover:bg-white duration-300"
+                    >
+                      <i class="fa fa-map" style="font-size: 12px"></i>
+                      <p class="font-medium text-sm">Santos - SP</p>
+                    </div>
+                  </div>
+
+                  <img
+                    src="./assets/2.jpg"
+                    alt="casa 1"
+                    class="rounded-lg w-full h-64 object-cover group-hover:scale-110 duration-300"
+                  />
+                </div>
+
+                <div class="w-full flex flex-col gap-1 my-2">
+                  <h2 class="text-lg font-bold">Apartamento médio</h2>
+                  <div>
+                    <p class="text-gray-600 line-through text-sm">
+                      R$ 2.400/mês
+                    </p>
+                    <p class="my-1 font-bold text-indigo-500">R$ 2.000/mês</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-auto">
+                <span class="font-medium text-sm">65m -</span>
+                <span class="font-medium text-sm">2 quartos - </span>
+                <span class="font-medium text-sm">1 banheiro</span>
+              </div>
+            </a>
+
+            <a
+              href="#"
+              class="bg-white p-3 rounded-lg min-h-[400px] relative flex flex-col hover:shadow-xl duration-300"
+            >
+              <div>
+                <div class="group overflow-hidden rounded-lg">
+                  <div class="absolute z-40 top-5 left-4">
+                    <div
+                      class="flex bg-slate-50/70 self-start items-center justify-center gap-3 px-3 py-1 rounded-full group-hover:bg-white duration-300"
+                    >
+                      <i class="fa fa-map" style="font-size: 12px"></i>
+                      <p class="font-medium text-sm">Belo Horizonte - MG</p>
+                    </div>
+                  </div>
+
+                  <img
+                    src="./assets/3.jpg"
+                    alt="casa 1"
+                    class="rounded-lg w-full h-64 object-cover group-hover:scale-110 duration-300"
+                  />
+                </div>
+
+                <div class="w-full flex flex-col gap-1 my-2">
+                  <h2 class="text-lg font-bold">Apartamento grande</h2>
+                  <div>
+                    <p class="text-gray-600 line-through text-sm">
+                      R$ 2.700/mês
+                    </p>
+                    <p class="my-1 font-bold text-indigo-500">R$ 2.500/mês</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-auto">
+                <span class="font-medium text-sm">110m -</span>
+                <span class="font-medium text-sm">3 quartos - </span>
+                <span class="font-medium text-sm">2 banheiros</span>
+              </div>
+            </a>
+
+            <a
+              href="#"
+              class="bg-white p-3 rounded-lg min-h-[400px] relative flex flex-col hover:shadow-xl duration-300"
+            >
+              <div>
+                <div class="group overflow-hidden rounded-lg">
+                  <div class="absolute z-40 top-5 left-4">
+                    <div
+                      class="flex bg-slate-50/70 self-start items-center justify-center gap-3 px-3 py-1 rounded-full group-hover:bg-white duration-300"
+                    >
+                      <i class="fa fa-map" style="font-size: 12px"></i>
+                      <p class="font-medium text-sm">Guarulhos - SP</p>
+                    </div>
+                  </div>
+
+                  <img
+                    src="./assets/4.jpg"
+                    alt="casa 1"
+                    class="rounded-lg w-full h-64 object-cover group-hover:scale-110 duration-300"
+                  />
+                </div>
+
+                <div class="w-full flex flex-col gap-1 my-2">
+                  <h2 class="text-lg font-bold">Apartamento pequeno</h2>
+                  <div>
+                    <p class="text-gray-600 line-through text-sm">
+                      R$ 2.820/mês
+                    </p>
+                    <p class="my-1 font-bold text-indigo-500">R$ 2.000/mês</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-auto">
+                <span class="font-medium text-sm">45m -</span>
+                <span class="font-medium text-sm">1 quarto - </span>
+                <span class="font-medium text-sm">1 banheiro</span>
+              </div>
+            </a>
+
+            <a
+              href="#"
+              class="bg-white p-3 rounded-lg min-h-[400px] relative flex flex-col hover:shadow-xl duration-300"
+            >
+              <div>
+                <div class="group overflow-hidden rounded-lg">
+                  <div class="absolute z-40 top-5 left-4">
+                    <div
+                      class="flex bg-slate-50/70 self-start items-center justify-center gap-3 px-3 py-1 rounded-full group-hover:bg-white duration-300"
+                    >
+                      <i class="fa fa-map" style="font-size: 12px"></i>
+                      <p class="font-medium text-sm">Rio Preto - SP</p>
+                    </div>
+                  </div>
+
+                  <img
+                    src="./assets/5.jpg"
+                    alt="casa 1"
+                    class="rounded-lg w-full h-64 object-cover group-hover:scale-110 duration-300"
+                  />
+                </div>
+
+                <div class="w-full flex flex-col gap-1 my-2">
+                  <h2 class="text-lg font-bold">Apartamento grande</h2>
+                  <div>
+                    <p class="text-gray-600 line-through text-sm">
+                      R$ 2.500/mês
+                    </p>
+                    <p class="my-1 font-bold text-indigo-500">R$ 2.000/mês</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-auto">
+                <span class="font-medium text-sm">90m -</span>
+                <span class="font-medium text-sm">2 quartos - </span>
+                <span class="font-medium text-sm">2 banheiros</span>
+              </div>
+            </a>
+
+            <a
+              href="#"
+              class="bg-white p-3 rounded-lg min-h-[400px] relative flex flex-col hover:shadow-xl duration-300"
+            >
+              <div>
+                <div class="group overflow-hidden rounded-lg">
+                  <div class="absolute z-40 top-5 left-4">
+                    <div
+                      class="flex bg-slate-50/70 self-start items-center justify-center gap-3 px-3 py-1 rounded-full group-hover:bg-white duration-300"
+                    >
+                      <i class="fa fa-map" style="font-size: 12px"></i>
+                      <p class="font-medium text-sm">Campo Grande - MS</p>
+                    </div>
+                  </div>
+
+                  <img
+                    src="./assets/6.jpg"
+                    alt="casa 1"
+                    class="rounded-lg w-full h-64 object-cover group-hover:scale-110 duration-300"
+                  />
+                </div>
+
+                <div class="w-full flex flex-col gap-1 my-2">
+                  <h2 class="text-lg font-bold">Apartamento médio</h2>
+                  <div>
+                    <p class="text-gray-600 line-through text-sm">
+                      R$ 2.600/mês
+                    </p>
+                    <p class="my-1 font-bold text-indigo-500">R$ 2.200/mês</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-auto">
+                <span class="font-medium text-sm">70m -</span>
+                <span class="font-medium text-sm">2 quartos - </span>
+                <span class="font-medium text-sm">1 banheiro</span>
+              </div>
+            </a>
+          </div>
+        </section>
       </main>
     </div>
 
